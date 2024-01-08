@@ -51,7 +51,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .dark-mode {
-    @apply mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-500px)];
     /* margin: 0;
     padding: 0; */
     background: linear-gradient(to top right, #420c75, #000000);
