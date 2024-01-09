@@ -41,6 +41,15 @@ const Credits = () => {
                     Icon Studio
                 </a>
                 <br />
+                <a
+                    href='thenounproject.com'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='hover:underline'
+                >
+                    The Noun Project
+                </a>
+                <br />
                 My Family
                 <br />
                 My Friends

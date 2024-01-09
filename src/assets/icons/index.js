@@ -17,6 +17,7 @@ import instagram from './instagram.svg'
 import leetcode from './leetcode.svg'
 import chuckecheese from './chuckecheese.svg'
 import elephant from './elephant.svg'
+import rocket from './rocket.svg'
 import mongodb from './mongodb.svg'
 import motion from './motion.svg'
 import mui from './mui.svg'
@@ -60,6 +61,7 @@ export {
     leetcode,
     chuckecheese,
     elephant,
+    rocket,
     mongodb,
     motion,
     mui,
