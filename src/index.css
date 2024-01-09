@@ -19,7 +19,7 @@ body {
     width: 5px;
     height: 5px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
     /* Add glow effect */
 }
 
@@ -40,6 +40,18 @@ body {
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.75);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -112,7 +124,7 @@ body:has(.card[data-color="green"]:hover) {
     }
 
     .neo-btn {
-        @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
+        @apply py-3 px-6 rounded-lg text-purple-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
     }
 
     .cta {
@@ -216,7 +228,7 @@ body:has(.card[data-color="green"]:hover) {
 
 /* Neo Brutalism */
 .neo-brutalism-blue {
-    background: #2b77e7;
+    background: #5a2be7;
     position: relative;
     border-radius: 10px;
     border: #2b77e7;
@@ -255,6 +267,16 @@ body:has(.card[data-color="green"]:hover) {
 .animated-arrow {
     animation: moveArrow 1s infinite;
     /* Adjust the duration as needed */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .glitch {
