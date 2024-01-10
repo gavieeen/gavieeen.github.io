@@ -30,7 +30,7 @@ const renderContent = {
             <br />
             <br />
             <br />
-            <Link className='neo-brutalism-white neo-btn'>
+            <Link className='neo-brutalism-white neo-btn' style={{ fontSize: '16px' }}>
                 Drag the Mouse, Swipe Your Fingers, or Hit the Arrow Keys to Move
                 <img src={arrow} className='w-4 h-4 object-contain animated-arrow' alt='Arrow'></img>
             </Link>

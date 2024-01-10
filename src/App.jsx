@@ -1,10 +1,12 @@
 // import React from 'react'
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import { Home, About, Projects, Contact, Credits } from './pages';
 import Navbar from "./components/navbar";
 
 const App = () => {
     document.addEventListener("mousemove", function (e) {
+        const isHomePage = window.location.pathname === '/'; // inside event listener so it doesn't occur on every page
+
         const cursorDot = document.querySelector(".cursor-dot");
         const cursorOutline = document.querySelector(".cursor-outline");
 
@@ -22,17 +24,25 @@ const App = () => {
 
         const isLightBackground = (r + g + b) / 3 > 128; // Check if the background is light
 
-        cursorDot.style.backgroundColor = isLightBackground ? 'black' : 'white';
-        cursorDot.style.boxShadow = isLightBackground ? '0 0 10px rgba(0, 0, 0, 0.7)' : '0 0 10px rgba(255, 255, 255, 0.7)';
+        if (isHomePage) {
+            // Change cursor color only on the homepage
+            // console.log("Home Page");
+            cursorDot.style.backgroundColor = 'black';
+            cursorDot.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.7)';
 
-        cursorOutline.style.borderColor = isLightBackground ? 'rgba(0, 0, 0, 0.5)' : 'hsla(0, 0%, 100%, 0.5)';
-        cursorOutline.style.boxShadow = isLightBackground ? '0 0 20px rgba(0, 0, 0, 0.5)' : '0 0 20px rgba(255, 255, 255, 0.5)';
+            cursorOutline.style.borderColor = 'rgba(0, 0, 0, 0.5)';
+            cursorOutline.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.5)';
+        } else {
+            cursorDot.style.backgroundColor = isLightBackground ? 'black' : 'white';
+            cursorDot.style.boxShadow = isLightBackground ? '0 0 10px rgba(0, 0, 0, 0.7)' : '0 0 10px rgba(255, 255, 255, 0.7)';
+
+            cursorOutline.style.borderColor = isLightBackground ? 'rgba(0, 0, 0, 0.5)' : 'hsla(0, 0%, 100%, 0.5)';
+            cursorOutline.style.boxShadow = isLightBackground ? '0 0 20px rgba(0, 0, 0, 0.5)' : '0 0 20px rgba(255, 255, 255, 0.5)';
+        }
 
         cursorDot.style.left = `${posX}px`;
         cursorDot.style.top = `${posY}px`;
 
-        // cursorOutline.style.left = `${posX}px`;
-        // cursorOutline.style.top = `${posY}px`;
         cursorOutline.animate({
             left: `${posX}px`,
             top: `${posY}px`
