@@ -12,7 +12,7 @@ const Contact = () => {
     const formRef = useRef(null);
     const [form, setForm] = useState({ name: "", email: "", message: "" });
     const [isLoading, setIsLoading] = useState(false);
-    const [currentAnimation, setCurrentAnimation] = useState('idle');
+    const [currentAnimation, setCurrentAnimation] = useState('walk.left');
 
     const { alert, showAlert, hideAlert } = useAlert();
 
@@ -43,16 +43,16 @@ const Contact = () => {
 
             setTimeout(() => {
                 hideAlert();
-                setCurrentAnimation('idle');
+                setCurrentAnimation('walk.left');
             }, [3000])
         }).catch((error) => {
             setIsLoading(false)
-            setCurrentAnimation('walk.left')
+            setCurrentAnimation('idle')
             showAlert({ show: true, text: 'Message Failed to Send, Please Try Again', type: 'danger' })
         })
     };
-    const handleFocus = () => setCurrentAnimation('walk');
-    const handleBlur = () => setCurrentAnimation('idle');
+    const handleFocus = () => setCurrentAnimation('hit');
+    const handleBlur = () => setCurrentAnimation('walk');
     
     return (
         <div className="relative inset-0 dark-mode z-0">

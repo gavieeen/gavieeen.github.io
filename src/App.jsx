@@ -27,11 +27,12 @@ const App = () => {
         if (isHomePage) {
             // Change cursor color only on the homepage
             // console.log("Home Page");
-            cursorDot.style.backgroundColor = 'black';
-            cursorDot.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.7)';
+            cursorDot.style.backgroundColor = '#521190';
+            cursorDot.style.boxShadow = '0 0 10px rgba(82, 17, 144, 0.7)';
 
-            cursorOutline.style.borderColor = 'rgba(0, 0, 0, 0.5)';
-            cursorOutline.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.5)';
+            cursorOutline.style.borderColor = 'rgba(82, 17, 144, 0.5)';
+            cursorOutline.style.boxShadow = '0 0 20px rgba(82, 17, 144, 0.5)';
+
         } else {
             cursorDot.style.backgroundColor = isLightBackground ? 'black' : 'white';
             cursorDot.style.boxShadow = isLightBackground ? '0 0 10px rgba(0, 0, 0, 0.7)' : '0 0 10px rgba(255, 255, 255, 0.7)';
