@@ -7,8 +7,6 @@ import { arrow } from "../assets/icons";
 const Projects = () => {
     return (
         <div className="relative inset-0 dark-mode z-0">
-
-
             <section className='max-container'>
                 <h1 className='head-text'>
                     My{" "}

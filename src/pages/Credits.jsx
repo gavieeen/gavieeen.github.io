@@ -50,6 +50,15 @@ const Credits = () => {
                     The Noun Project
                 </a>
                 <br />
+                <a
+                    href='https://www.youtube.com/@GreatStackDev'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='hover:underline'
+                >
+                    GreatStack
+                </a>
+                <br />
                 My Family
                 <br />
                 My Friends

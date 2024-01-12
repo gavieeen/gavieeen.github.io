@@ -50,7 +50,7 @@ const App = () => {
         }, { duration: 500, fill: "forwards" })
     });
     return (
-        <main className="bg-slate-300/20 h-full">
+        <main className="bg-slate-300/20 h-full"> {/* still need to see how changes play out on mobile */}
             <Router>
                 <Navbar />
                 <Routes>

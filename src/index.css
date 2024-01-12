@@ -15,6 +15,23 @@ body {
     cursor: none;
 }
 
+#preloader {
+    background: black url(assets/loader2.gif) no-repeat center center;
+    /* background-size: 100%; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 98;
+    opacity: 1;
+    transition: opacity 1s, visibility 1s; /* Adjust the duration and easing as needed */
+}
+
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Disable pointer events on hidden preloader */
+}
+
 .cursor-dot {
     width: 10px;
     height: 10px;
@@ -38,7 +55,7 @@ body {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 99;
     pointer-events: none;
 }
 
@@ -85,7 +102,7 @@ body:has(.card[data-color="green"]:hover) {
     padding: 0; */
     background: linear-gradient(to top right, #420c75, #000000);
     /* Gradient from light to dark */
-
+    
     overflow: hidden;
     color: #ffffff;
     /* White text color */
