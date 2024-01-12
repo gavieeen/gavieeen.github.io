@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Html } from '@react-three/drei'
+import './loader.css'
+import { preLoaderAnim } from "../animations";
 
 const Loader = () => {
+  useEffect(() => {
+    preLoaderAnim();
+  }, []);
   return (
-    <Html> 
-        <div className="flex justify-center items-center">
-            <div className="w-20 h-20 border-2 border-opacity-20 border-blue-500 border-t-blue-500 rounded-full animate-spin" />
-        </div>
-    </Html>   
+    <div className="loader">
+      <div className="texts-container">
+        <span style={{ color: '#00c6ff'  }}>Developer,</span>
+        <span className='blue-gradient_text'>Dreamer,</span>
+        <span style={{ color: '#6106c9' }}>Doer.</span>
+      </div>
+    </div>
   )
 }
 

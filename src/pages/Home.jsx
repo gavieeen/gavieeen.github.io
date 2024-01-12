@@ -84,6 +84,8 @@ const Home = () => {
     const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
     return (
+        <>
+        <Loader />
         <section className="w-full h-screen relative">
             <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
                 {currentStage && <HomeInfo currentStage={currentStage} />}
@@ -93,30 +95,28 @@ const Home = () => {
                 className={"w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}"}
                 camera={{ near: 0.1, far: 1000 }}
             >
-                <Suspense fallback={<Loader />}>
-                    <directionalLight position={[10, 1, 1]} intensity={1} />
-                    <ambientLight intensity={0.5} />
-                    {/* <pointLight /> 
+                <directionalLight position={[10, 1, 1]} intensity={1} />
+                <ambientLight intensity={0.5} />
+                {/* <pointLight /> 
                     <spotLight /> */}
-                    <hemisphereLight skyColor={"b1e1ff"} groundColor={"#000000"} intensity={1} />
+                <hemisphereLight skyColor={"b1e1ff"} groundColor={"#000000"} intensity={1} />
 
-                    <Bird />
-                    <Sky isRotating={isRotating} />
-                    <Island
-                        position={islandPosition}
-                        scale={islandScale}
-                        rotation={islandRotation}
-                        isRotating={isRotating}
-                        setIsRotating={setIsRotating}
-                        setCurrentStage={setCurrentStage}
-                    />
-                    <Plane
-                        isRotating={isRotating}
-                        scale={planeScale}
-                        position={planePosition}
-                        rotation={[0, 20, 0]}
-                    />
-                </Suspense>
+                <Bird />
+                <Sky isRotating={isRotating} />
+                <Island
+                    position={islandPosition}
+                    scale={islandScale}
+                    rotation={islandRotation}
+                    isRotating={isRotating}
+                    setIsRotating={setIsRotating}
+                    setCurrentStage={setCurrentStage}
+                />
+                <Plane
+                    isRotating={isRotating}
+                    scale={planeScale}
+                    position={planePosition}
+                    rotation={[0, 20, 0]}
+                />
             </Canvas>
 
             <div className='absolute bottom-1 left-12'>
@@ -144,6 +144,7 @@ const Home = () => {
                 />
             </div>
         </section>
+        </>
     )
 }
 

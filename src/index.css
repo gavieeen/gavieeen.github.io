@@ -20,7 +20,7 @@ body {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 98;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,12 +28,37 @@ body {
 
 #preloader-content {
     text-align: center;
-    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    background: linear-gradient(to right, #00c6ff, #6106c9);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#loading-text::after {
+    content: " .";
+    animation: dotsAnimation 1s infinite steps(3);
+}
+
+@keyframes dotsAnimation {
+
+    0%,
+    100% {
+        content: " .";
+    }
+
+    33% {
+        content: " . .";
+    }
+
+    66% {
+        content: " . . .";
+    }
 }
 
 #preloader p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #preloader.fadeOut {
@@ -70,7 +95,7 @@ body {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 99;
+    z-index: 98;
     pointer-events: none;
 }
 
@@ -95,9 +120,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.75);
     }
+
     100% {
         transform: scale(1);
     }
@@ -117,7 +144,7 @@ body:has(.card[data-color="green"]:hover) {
     padding: 0; */
     background: linear-gradient(to top right, #420c75, #000000);
     /* Gradient from light to dark */
-    
+
     overflow: hidden;
     color: #ffffff;
     /* White text color */
