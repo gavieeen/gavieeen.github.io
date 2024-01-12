@@ -2,6 +2,7 @@
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import { Home, About, Projects, Contact, Credits } from './pages';
 import Navbar from "./components/navbar";
+import Loader from './components/Loader'
 
 const App = () => {
     document.addEventListener("mousemove", function (e) {
@@ -50,6 +51,8 @@ const App = () => {
         }, { duration: 500, fill: "forwards" })
     });
     return (
+        <>
+        <Loader/>
         <main className="bg-slate-300/20 h-full"> {/* still need to see how changes play out on mobile */}
             <Router>
                 <Navbar />
@@ -62,6 +65,7 @@ const App = () => {
                 </Routes>
             </Router>
         </main>
+        </>
     )
 }
 
