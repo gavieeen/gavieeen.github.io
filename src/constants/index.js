@@ -224,6 +224,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: estate,
+        theme: 'btn-back-pink',
+        name: 'Infinite Anime List',
+        description: `Anime exploration website using Next.js with Shikimori API integration. Seamlessly combining server actions and client-side rendering, the site offers an infinite scroll for uninterrupted anime discovery—a Next.js showcase of powerful user-centric features. (Anime Website in Github ReadME)`,
+        link: 'https://github.com/gavieeen/infinite-anime-list',
+    },
+    {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Handwritten Digit Recognition with Machine Learning',
@@ -235,7 +242,7 @@ export const projects = [
         theme: 'btn-back-blue',
         name: 'Movie Finding App',
         description: 'Employed Google Search API and BeautifulSoup for web scraping and implemented advanced Named Entity Recognition with SpaCy to analyze user-inputted dialogues and identify movie titles.',
-        link: 'https://github.com/Pinkgirl16/Group1_CS124H',
+        link: 'https://docs.google.com/presentation/d/1-IvvuZRRYdRbj1ZJH9JTLxpXlrgJbiG_wKXUv0xG8aU/edit#slide=id.p',
     },
     {
         iconUrl: threads,
@@ -261,19 +268,19 @@ export const projects = [
     //     link: 'https://github.com/adrianhajdin/social_media_app',
     // },
     {
-        iconUrl: estate,
+        iconUrl: quote1,
         theme: 'btn-back-black',
         name: 'PALM2 Chatbot Development',
         description: 'Leveraged PaLM 2 and integrated it with NodeJS, React, ViteJS, and the Google Bard API to create a chatbot website, illustrating proficiency in natural language processing and end-to-end development.',
         link: 'https://github.com/gavieeen/palm2-panda-prompter',
     },
-    {
-        iconUrl: quote1,
-        theme: 'btn-back-pink',
-        name: 'Quote-Gen',
-        description: 'Quote Generator that fetches quotes from a specified API and displays them in a stylish interface. The generator also has an interactive overlay effect for an enhanced user experience. (Website in Github ReadME)',
-        link: 'https://github.com/gavieeen/quote-gen',
-    },
+    // {
+    //     iconUrl: quote1,
+    //     theme: 'btn-back-pink',
+    //     name: 'Quote-Gen',
+    //     description: 'Quote Generator that fetches quotes from a specified API and displays them in a stylish interface. The generator also has an interactive overlay effect for an enhanced user experience. (Website in Github ReadME)',
+    //     link: 'https://github.com/gavieeen/quote-gen',
+    // },
     // {
     //     iconUrl: summiz,
     //     theme: 'btn-back-yellow',
