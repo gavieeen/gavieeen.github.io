@@ -99,23 +99,6 @@ body {
     pointer-events: none;
 }
 
-/* .tooltip {
-    position: relative;
-    display: inline-block;
-} */
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 0px;
-    background-color: #555;
-    color: #fff;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -219,6 +202,10 @@ body:has(.card[data-color="green"]:hover) {
     .social-icons {
         @apply inline-block w-8 h-8 mx-2;
     }
+}
+
+.sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-bottom z-50;
 }
 
 .glassmorphism {
@@ -686,4 +673,73 @@ body:has(.card[data-color="green"]:hover) {
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 8px;
+    background-color: #7f11e6;
+    background: linear-gradient(to bottom, #00c6ff, #6106c9);
+    color: white;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #541edd;
+    border-top: 5px solid hsla(256, 71%, 51%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    transform: translateY(15px);
 }

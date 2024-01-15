@@ -6,10 +6,13 @@ import { skills, experiences } from '../constants'
 import CTA from '../components/CTA';
 
 const About = () => {
+    window.onmousemove = null;
+    window.ontouchmove = null;
+    document.body.onmouseleave = null;
     return (
         <div className="relative inset-0 dark-mode z-0">
             <section className="max-container">
-                <h1 className="head-text">
+                <h1 className="head-text blue-gradient_text">
                     Hello, I'm{" "}
                     <span className='blue-gradient_text font-semibold drop-shadow'>
                         {" "}
@@ -19,7 +22,7 @@ const About = () => {
                             rel='noopener noreferrer'
                             className='hover:underline'
                         >
-                            <div className="glitch" data-text="<WAKEUP/>">GAVIN!</div>
+                            <div className="glitch" data-text="GAVIN!">GAVIN!</div>
                         </a>
                         <br />
                         {"( 。・_・。)人(。・_・。 )"}
@@ -40,18 +43,18 @@ const About = () => {
 
                     <div className='mt-16 flex flex-wrap gap-12'>
                         {skills.map((skill) => (
-                            <div className='block-container w-20 h-20' key={skill.name}>
-                                <div className='btn-back rounded-xl' title={skill.name}/>
-                                <div className='btn-front rounded-xl flex justify-center items-center tooltip'>
-                                    <img
-                                        src={skill.imageUrl}
-                                        alt={skill.name}
-                                        title={skill.name}
-                                        className='w-1/2 h-1/2 object-contain'
-                                    />
-                                    <span className="tooltiptext"></span> {/* TODO: add tooltip element */}
+                            <>
+                                <div className='block-container w-20 h-20' key={skill.name} data-tooltip={skill.name}>
+                                    <div className='btn-back rounded-xl' title={skill.name} />
+                                    <div className='btn-front rounded-xl flex justify-center items-center'>
+                                        <img
+                                            src={skill.imageUrl}
+                                            alt={skill.name}
+                                            className='w-1/2 h-1/2 object-contain'
+                                        /> {/* TODO: add tooltip element */}
+                                    </div>
                                 </div>
-                            </div>
+                            </>
                         ))}
                     </div>
                 </div>

@@ -8,6 +8,9 @@ import Alert from '../components/Alert';
 import { socialLinks } from '../constants';
 
 const Contact = () => {
+    window.onmousemove = null;
+    window.ontouchmove = null;
+    document.body.onmouseleave = null;
     const formRef = useRef(null);
     const [form, setForm] = useState({ name: "", email: "", message: "" });
     const [isLoading, setIsLoading] = useState(false);
@@ -122,7 +125,7 @@ const Contact = () => {
                                 <img
                                     src={link.iconUrl}
                                     alt={link.name}
-                                    className="social-icon w-20 h-20 mx-20 my-20"
+                                    className="social-icon w-20 h-20 mx-20 my-10"
                                 />
                             </a>
                         ))}

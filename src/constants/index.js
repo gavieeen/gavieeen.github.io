@@ -22,9 +22,11 @@ import {
     leetcode,
     chuckecheese,
     elephant,
-    rocket,
     quote1,
+    illinois,
+    godot,
     linkedin,
+    frog,
     mongodb,
     motion,
     mui,
@@ -137,20 +139,23 @@ export const skills = [
         name: "PyTorch",
         type: "Neural Networks"
     },
+    {
+        imageUrl: godot,
+        name: "Godot (GDScript)",
+        type: "Game Engine"
+    },
 ];
 
 export const experiences = [
     {
-        title: "Cast Member",
-        company_name: "Chuck E. Cheese",
-        icon: chuckecheese,
-        iconBg: "#ffffcc",
-        date: "June 2022 - Jan 2023",
+        title: "Intro to Computer Science I Course Assistant",
+        company_name: "University of Illinois Urbana-Champaign",
+        icon: illinois,
+        iconBg: "#11145c",
+        date: "Jan 2024 - Present",
         points: [
-            "Managed diverse responsibilities at Chuck E. Cheese, ensuring a positive customer experience and contributing to the facility's overall success .",
-            "Provided exceptional customer service, operated the register, and portrayed Chuck E. Cheese character to create a magical atmosphere .",
-            "Achieved 2nd place out of all cashiers at the Chuck E. Cheese in Customer Satisfaction Survey Contest.",
-            "Participated in Chuck E. Cheese's mission of providing everyday fun, hosting group events, and ensuring a family-friendly environment .",
+            "Assisted students in understanding Kotlin programming, including syntax and topic comprehension.",
+            "Responded to challenging questions regarding the course material, such as daily homework coding problems, debugging issues, and machine projects.",
         ],
     },
     {
@@ -161,9 +166,22 @@ export const experiences = [
         date: "July 2022 - Nov 2022",
         points: [
             "Actively participated in various aspects of the electoral process, significantly contributing to the success of multiple national and state election campaigns.",
-            "Formulated and executed strategic initiatives to effectively promote candidates, including innovative and well-received strategy ideas pitched to the campaign manager .",
-            "Played a vital role in shaping campaign outreach efforts by leveraging analytical skills and understanding of voter engagement .",
+            "Formulated and executed strategic initiatives to effectively promote candidates, including innovative and well-received strategy ideas pitched to the campaign manager.",
+            "Played a vital role in shaping campaign outreach efforts by leveraging analytical skills and understanding of voter engagement.",
             " Identified key demographics and developed compelling messaging strategies to resonate with voters.",
+        ],
+    },
+    {
+        title: "Cast Member",
+        company_name: "Chuck E. Cheese",
+        icon: chuckecheese,
+        iconBg: "#ffffcc",
+        date: "June 2022 - Jan 2023",
+        points: [
+            "Managed diverse responsibilities at Chuck E. Cheese, ensuring a positive customer experience and contributing to the facility's overall success.",
+            "Provided exceptional customer service, operated the register, and portrayed Chuck E. Cheese character to create a magical atmosphere.",
+            "Achieved 2nd place out of all cashiers at the Chuck E. Cheese in Customer Satisfaction Survey Contest.",
+            "Participated in Chuck E. Cheese's mission of providing everyday fun, hosting group events, and ensuring a family-friendly environment.",
         ],
     },
     // {
@@ -227,7 +245,7 @@ export const projects = [
         iconUrl: estate,
         theme: 'btn-back-pink',
         name: 'Infinite Anime List',
-        description: `Anime exploration website using Next.js with Shikimori API integration. Seamlessly combining server actions and client-side rendering, the site offers an infinite scroll for uninterrupted anime discovery—a Next.js showcase of powerful user-centric features. (Anime Website in Github ReadME)`,
+        description: `Anime exploration website using Next.js with Shikimori API integration. Seamlessly combining server actions and client-side rendering, the site offers an infinite scroll for uninterrupted anime discovery—a Next.js showcase of powerful user-centric features. (𝔸𝕟𝕚𝕞𝕖 𝕎𝕖𝕓𝕤𝕚𝕥𝕖 𝕚𝕟 𝔾𝕚𝕥𝕙𝕦𝕓 ℝ𝕖𝕒𝕕𝕄𝔼)`,
         link: 'https://github.com/gavieeen/infinite-anime-list',
     },
     {
@@ -240,9 +258,9 @@ export const projects = [
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Movie Finding App',
-        description: 'Employed Google Search API and BeautifulSoup for web scraping and implemented advanced Named Entity Recognition with SpaCy to analyze user-inputted dialogues and identify movie titles.',
-        link: 'https://docs.google.com/presentation/d/1-IvvuZRRYdRbj1ZJH9JTLxpXlrgJbiG_wKXUv0xG8aU/edit#slide=id.p',
+        name: 'CineSearch',
+        description: 'A React-powered movie search app, utilizing the OMDb API for real-time movie data. Implemented responsive design, pagination, and dynamic loading for a seamless user experience. CineSearch offers an efficient and enjoyable way to explore a vast collection of movies. (𝕄𝕠𝕧𝕚𝕖 𝕎𝕖𝕓𝕤𝕚𝕥𝕖 𝕚𝕟 𝔾𝕚𝕥𝕙𝕦𝕓 ℝ𝕖𝕒𝕕𝕄𝔼)',
+        link: 'https://github.com/gavieeen/CineSearch/',
     },
     {
         iconUrl: threads,
@@ -253,12 +271,12 @@ export const projects = [
         link: 'https://cs124.org',
     },
     {
-        iconUrl: rocket,
+        iconUrl: frog,
         theme: 'btn-back-orange',
-        name: 'DinoGame',
-        description: 'Implemented a classic side-scrolling dinosaur game using HTML and JavaScript. The project involved creating a simple user interface with a character that can jump to avoid obstacles. Demonstrated problem-solving skills in managing game states, animations, and user interactions. (Game website in Github ReadME)',
+        name: 'Platformer Game',
+        description: 'Implemented an engaging 2D platformer game, "Frog Slayer," using the Godot game engine. The project showcases a dynamic user interface with interactive elements, featuring a player character capable of stomping on enemy frogs, collecting gold, and strategically avoiding obstacles.',
         //link: 'https://github.com/cs124-illinois-students/MP-Fall2023-kotlin-gavieeen',
-        link: 'https://github.com/gavieeen/DinoGame',
+        link: 'https://github.com/gavieeen/frog-slayer-platformer-game',
     },
     // {
     //     iconUrl: snapgram,

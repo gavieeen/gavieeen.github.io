@@ -2,7 +2,7 @@
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import { Home, About, Projects, Contact, Credits } from './pages';
 import Navbar from "./components/navbar";
-import Loader from './components/Loader'
+import Loader from './components/Loader';
 
 const App = () => {
     document.addEventListener("mousemove", function (e) {

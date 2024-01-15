@@ -5,6 +5,9 @@ import { projects } from "../constants";
 import { arrow } from "../assets/icons";
 
 const Projects = () => {
+    window.onmousemove = null;
+    window.ontouchmove = null;
+    document.body.onmouseleave = null;
     return (
         <div className="relative inset-0 dark-mode z-0">
             <section className='max-container'>
