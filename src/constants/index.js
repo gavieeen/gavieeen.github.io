@@ -247,6 +247,7 @@ export const projects = [
         name: 'Infinite Anime List',
         description: `Anime exploration website using Next.js with Shikimori API integration. Seamlessly combining server actions and client-side rendering, the site offers an infinite scroll for uninterrupted anime discovery—a Next.js showcase of powerful user-centric features. (𝔸𝕟𝕚𝕞𝕖 𝕎𝕖𝕓𝕤𝕚𝕥𝕖 𝕚𝕟 𝔾𝕚𝕥𝕙𝕦𝕓 ℝ𝕖𝕒𝕕𝕄𝔼)`,
         link: 'https://github.com/gavieeen/infinite-anime-list',
+        linkURL: 'https://infinite-anime-list.vercel.app/'
     },
     {
         iconUrl: pricewise,
@@ -261,6 +262,7 @@ export const projects = [
         name: 'CineSearch',
         description: 'A React-powered movie search app, utilizing the OMDb API for real-time movie data. Implemented responsive design, pagination, and dynamic loading for a seamless user experience. CineSearch offers an efficient and enjoyable way to explore a vast collection of movies. (𝕄𝕠𝕧𝕚𝕖 𝕎𝕖𝕓𝕤𝕚𝕥𝕖 𝕚𝕟 𝔾𝕚𝕥𝕙𝕦𝕓 ℝ𝕖𝕒𝕕𝕄𝔼)',
         link: 'https://github.com/gavieeen/CineSearch/',
+        linkURL: 'https://cinesearch-kappa.vercel.app/'
     },
     {
         iconUrl: threads,

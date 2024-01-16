@@ -38,7 +38,7 @@ const Projects = () => {
                                     />
                                 </div>
                             </div>
-
+                            
                             <div className='mt-5 flex flex-col'>
                                 <h4 className='text-2xl font-poppins font-semibold'>
                                     {project.name}
