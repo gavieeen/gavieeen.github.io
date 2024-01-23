@@ -22,7 +22,7 @@ const renderContent = {
                     rel='noopener noreferrer'
                     className='font-extrabold text-lg hover:underline'
                 >
-                    {'<'}Gavin Ebenezer! {'/>'}
+                    <u>Gavin Ebenezer!</u>
                 </a> 🤫🧏‍♂️
             </span>
             <br />
