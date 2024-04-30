@@ -242,6 +242,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: quote1,
+        theme: 'btn-back-yellow',
+        name: 'Thiru Chatbot',
+        description: 'Implemented a full-stack chatbot interface for Baltimore mayoral candidate Thiruvendran Tignarajah, employing Flask for web serving and AJAX for asynchronous communication.',
+        link: 'https://virtual-avatar-production.up.railway.app/',
+    },
+    {
         iconUrl: estate,
         theme: 'btn-back-pink',
         name: 'Infinite Anime List',
