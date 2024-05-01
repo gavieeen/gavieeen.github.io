@@ -246,7 +246,7 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'Thiru Chatbot',
         description: 'Implemented a full-stack chatbot interface for Baltimore mayoral candidate Thiruvendran Tignarajah, employing Flask for web serving and AJAX for asynchronous communication.',
-        link: 'https://virtual-avatar-production.up.railway.app/',
+        link: 'https://chat.thiruformayor.com/',
     },
     {
         iconUrl: estate,
