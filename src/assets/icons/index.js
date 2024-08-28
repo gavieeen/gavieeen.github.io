@@ -17,6 +17,7 @@ import instagram from './instagram.svg'
 import leetcode from './leetcode.svg'
 import chuckecheese from './chuckecheese.svg'
 import elephant from './elephant.svg'
+import donkey from './donkey.svg'
 import quote1 from './quote1.svg'
 import frog from './frog.svg'
 import illinois from './IllinoisLogo (3).svg'
@@ -64,6 +65,7 @@ export {
     leetcode,
     chuckecheese,
     elephant,
+    donkey,
     frog,
     quote1,
     illinois,

@@ -22,6 +22,7 @@ import {
     leetcode,
     chuckecheese,
     elephant,
+    donkey,
     quote1,
     illinois,
     godot,
@@ -106,7 +107,7 @@ export const skills = [
     },
     {
         imageUrl: python,
-        name: "Python",
+        name: "Python3",
         type: "Backend"
     },
     {
@@ -154,21 +155,32 @@ export const experiences = [
         iconBg: "#11145c",
         date: "Jan 2024 - Present",
         points: [
-            "Assisted students in understanding Kotlin programming, including syntax and topic comprehension.",
-            "Responded to challenging questions regarding the course material, such as daily homework coding problems, debugging issues, and machine projects.",
+            "Assisted students in understanding Kotlin programming, including syntax and topic comprehension",
+            "Responded to challenging questions regarding the course material, such as daily homework coding problems, debugging issues, and machine projects",
         ],
     },
     {
-        title: "Campaign Intern",
+        title: "Software Engineer",
+        company_name: "Thiru for Mayor",
+        icon: donkey,
+        iconBg: "#a2d2ff",
+        date: "March 2024 - May 2024",
+        points: [
+            "Collaborated with team to implement a full-stack chatbot interface for Baltimore mayoral candidate Thiruvendran Tignarajah, employing Flask for web serving and AJAX for asynchronous communication",
+            "Integrated text-to-speech functionality, converting responses leveraging the Eleven Labs API and Base64 encoding into audio format for an enhanced user experience",
+            "Re-engineered the data retrieval system by using vector-based document indexes with LlamaIndex to enhance runtime efficiency and accuracy of policy-related responses in the final customer product"
+        ],
+    },
+    {
+        title: "Software Engineer Intern",
         company_name: "Illinois House Republican Organization",
         icon: elephant,
         iconBg: "#fbc3bc",
         date: "July 2022 - Nov 2022",
         points: [
-            "Actively participated in various aspects of the electoral process, significantly contributing to the success of multiple national and state election campaigns.",
-            "Formulated and executed strategic initiatives to effectively promote candidates, including innovative and well-received strategy ideas pitched to the campaign manager.",
-            "Played a vital role in shaping campaign outreach efforts by leveraging analytical skills and understanding of voter engagement.",
-            " Identified key demographics and developed compelling messaging strategies to resonate with voters.",
+            "Maintained a relational database via PostgreSQL to research correlations in voting demographics and optimize door-knocking routes, increasing voter conversations by over 20%",
+            "Pitched several accepted strategy and product design ideas to campaign manager for efficient voter engagement",
+            "Leveraged strong communication skills to effectively campaign for multiple national and state election candidates, contributing to outreach success"
         ],
     },
     {
@@ -178,10 +190,11 @@ export const experiences = [
         iconBg: "#ffffcc",
         date: "June 2022 - Jan 2023",
         points: [
-            "Managed diverse responsibilities at Chuck E. Cheese, ensuring a positive customer experience and contributing to the facility's overall success.",
-            "Provided exceptional customer service, operated the register, and portrayed Chuck E. Cheese character to create a magical atmosphere.",
-            "Achieved 2nd place out of all cashiers at the Chuck E. Cheese in Customer Satisfaction Survey Contest.",
-            "Participated in Chuck E. Cheese's mission of providing everyday fun, hosting group events, and ensuring a family-friendly environment.",
+            "Managed diverse responsibilities at Chuck E. Cheese, ensuring a positive customer experience and contributing to the facility's overall success",
+            "Provided exceptional customer service, operated the register, and portrayed Chuck E. Cheese character to create a magical atmosphere",
+            "Achieved 2nd place out of all cashiers at the Chuck E. Cheese in Customer Satisfaction Survey Contest",
+            "Played a crucial role in entertaining young guests, donning the Chuck E. suit, and creating a fun and memorable experience for children and parents",
+            "Where A Kid Can Be A Kid!"
         ],
     },
     // {
@@ -241,6 +254,13 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    {
+        iconUrl: frog,
+        theme: 'btn-back-orange',
+        name: 'Basic Game Engine',
+        description: "Built a simple game engine with entity interaction, texture handling, graphics rendering, and a streamlined singleton class structure for efficient resource management",
+        link: 'https://github.com/gavieeen/SFML-Game-Engine-Basics'
+    },
     {
         iconUrl: quote1,
         theme: 'btn-back-yellow',
