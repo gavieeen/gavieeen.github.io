@@ -149,11 +149,11 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "Intro to Computer Science I Course Assistant",
-        company_name: "University of Illinois Urbana-Champaign",
+        title: "Software Engineer",
+        company_name: "Gies College of Business at UIUC",
         icon: illinois,
         iconBg: "#11145c",
-        date: "Jan 2024 - Present",
+        date: "Sep 2024 - Present",
         points: [
             "Collaborated with a multidisciplinary team to innovate on real-world applications of disruptive technologies, including machine learning and computer vision, to address emerging challenges in media authenticity",
             "Developing a deepfake detection model using advanced AI techniques for Encode Justice, enhancing the identification of manipulated media to promote safe and equitable AI use",
