@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, starbucks, tesla, amazon } from "../assets/images";
 import {
     car,
     contact,
@@ -149,8 +149,18 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Software Development Engineer Intern",
+        company_name: "Amazon",
+        icon: amazon,
+        iconBg: "#FF9900",
+        date: "May 2025 - Aug 2025",
+        points: [
+            "Incoming Summer 2025"
+        ],
+    },
+    {
         title: "Software Engineer",
-        company_name: "Gies College of Business at UIUC",
+        company_name: "Disruption Lab",
         icon: illinois,
         iconBg: "#11145c",
         date: "Sep 2024 - Present",
@@ -265,6 +275,13 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    {
+        iconUrl: git,
+        theme: 'btn-back-black',
+        name: 'Optimized Memory Allocator',
+        description: 'Low-level, optimized memory allocator in C using a free list with O(1) free block lookup and coalescing, minimizing metadata overhead for efficient heap management',
+        link: 'https://github.com/gavieeen/memory-allocator'
+    },
     {
         iconUrl: frog,
         theme: 'btn-back-orange',
